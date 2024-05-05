@@ -6,13 +6,13 @@ import ResponsiveImage from '@/molecules/ResponsiveImage';
 export default function Page() {
   return (
     <>
-      <Section className='pt-5 pb-0'>
-        <Heading as='h1' size='xl' className='text-center'>
+      <Section isFirst className='max-w-3xl lg:text-center'>
+        <Heading as='h1' size='xl' className='text-center lg:mb-8'>
           Get in touch
         </Heading>
         <ContactForm />
       </Section>
-      <Section>
+      <Section className='max-w-3xl lg:text-center lg:mt-8'>
         <Heading as='h2' size='lg' className='text-center'>
           Let&#39;s do it together &#60;3
         </Heading>

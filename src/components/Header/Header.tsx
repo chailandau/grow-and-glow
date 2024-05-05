@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <header className='sticky top-0 bg-offWhite border-b border-gray-200 shadow-sm z-50'>
       <div
-        className={`flex items-center justify-between max-w-6xl m-auto px-4 ${isSticky ? 'py-2' : 'py-4'} transition-spacing`}
+        className={`flex items-center justify-between max-w-[1400px] m-auto px-4 ${isSticky ? 'py-2' : 'py-4'} transition-spacing`}
       >
         <Link href='/' aria-label={siteName}>
           <div className='flex items-center justify-between'>

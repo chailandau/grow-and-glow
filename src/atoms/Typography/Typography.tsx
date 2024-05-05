@@ -32,12 +32,12 @@ const Heading: FC<HeadingProps> = ({
       sm: 'sm:text-lg',
       md: 'sm:text-xl',
       lg: 'sm:text-2xl',
-      xl: 'sm:text-4xl'
+      xl: 'sm:text-5xl'
     },
     desktop: {
       sm: 'md:text-xl',
       md: 'md:text-2xl',
-      lg: 'md:text-3xl',
+      lg: 'md:text-4xl',
       xl: 'md:text-5xl'
     }
   };

@@ -3,8 +3,8 @@ import Image from 'next/image';
 import NewsletterForm from '../Forms/NewsletterForm';
 
 const Footer = () => (
-  <footer className='bg-darkGray text-white'>
-    <div className='flex flex-col gap-4 mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8'>
+  <footer className='bg-darkGray text-white mt-16'>
+    <div className='flex flex-col gap-4 mx-auto max-w-xl px-4 py-10 sm:px-6 lg:px-8'>
       <div className='h-8 w-60 relative m-auto mb-4'>
         <Image
           src='/images/dark-logo.svg'

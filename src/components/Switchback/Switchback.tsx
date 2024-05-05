@@ -17,39 +17,48 @@ interface SwitchbackProps {
   heading: string;
   /* Body content */
   body: ReactNode;
+  /* Additional classes */
+  className?: string;
 }
 
 const Switchback: FC<SwitchbackProps> = ({
   imageSide = 'left',
   imageInfo,
   heading,
-  body
+  body,
+  className
 }) => {
   const isRightImg = imageSide === 'right';
 
   return (
-    <Section className='grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16'>
+    <Section
+      className={`grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 lg:items-center ${className ? className : ''}`}
+    >
       {imageInfo && (
         <ResponsiveImage
           src={imageInfo.src}
           alt={imageInfo.alt}
           height='two-thirds'
           position={imageInfo.position || 'top'}
-          className={`${isRightImg ? 'sm:hidden' : ''}`}
+          className={`${isRightImg ? 'lg:hidden' : ''}`}
         />
       )}
 
-      <div className='text-center flex flex-col gap-2'>
+      <div
+        className={`flex flex-col gap-2 ${isRightImg ? 'lg:pl-24' : 'lg:pr-24'}`}
+      >
         {heading && <Heading>{heading}</Heading>}
         {body && body}
       </div>
-      <ResponsiveImage
-        src={imageInfo.src}
-        alt={imageInfo.alt}
-        height='two-thirds'
-        position={imageInfo.position || 'top'}
-        className={`hidden ${isRightImg ? 'sm:block' : ''}`}
-      />
+      {imageInfo && (
+        <ResponsiveImage
+          src={imageInfo.src}
+          alt={imageInfo.alt}
+          height='two-thirds'
+          position={imageInfo.position || 'top'}
+          className={`hidden ${isRightImg ? 'lg:block' : ''}`}
+        />
+      )}
     </Section>
   );
 };

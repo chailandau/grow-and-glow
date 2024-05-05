@@ -5,7 +5,7 @@ import Switchback from '@/components/Switchback';
 export default function Page() {
   return (
     <>
-      <Section className='pt-5 pb-0'>
+      <Section isFirst className='-mb-8 lg:mb-4'>
         <Heading as='h1' size='xl' className='text-center'>
           About me
         </Heading>
@@ -25,6 +25,7 @@ export default function Page() {
             inspiration.
           </p>
         }
+        className='lg:-mb-6'
       />
       <Switchback
         imageSide='right'
@@ -41,6 +42,7 @@ export default function Page() {
             became the catalyst for my personal metamorphosis.
           </p>
         }
+        className='lg:-mb-6'
       />
       <Switchback
         imageInfo={{

@@ -35,7 +35,7 @@ export default function RootLayout({
     >
       <body className='font-sans'>
         <Header />
-        <main className='flex flex-col items-center justify-between'>
+        <main className='flex flex-col items-center justify-between gap-14'>
           {children}
         </main>
         <Footer />

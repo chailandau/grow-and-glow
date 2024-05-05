@@ -26,7 +26,7 @@ const NewsletterForm = () => {
   });
 
   const fieldStyles =
-    'w-full rounded-lg border border-gray-200 p-4 pe-12 text-sm shadow-sm';
+    'w-full rounded-lg border border-gray-200 p-4 pe-12 text-sm shadow-sm text-darkGray';
 
   return (
     <>
