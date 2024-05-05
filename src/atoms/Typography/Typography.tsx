@@ -24,7 +24,7 @@ const Heading: FC<HeadingProps> = ({
   const fontSizeMap = {
     mobile: {
       sm: 'text-md',
-      md: 'text-lg',
+      md: 'text-xl',
       lg: 'text-3xl',
       xl: 'text-5xl'
     },
@@ -44,7 +44,7 @@ const Heading: FC<HeadingProps> = ({
 
   return (
     <HeadingTag
-      className={`${fontSizeMap.mobile[size]} ${fontSizeMap.tablet[size]} ${fontSizeMap.desktop[size]} font-semibold font-serif font-wide ${className}`}
+      className={`${fontSizeMap.mobile[size]} ${fontSizeMap.tablet[size]} ${fontSizeMap.desktop[size]} font-semibold font-serif font-wide ${className ? className : ''}`}
     >
       {children}
     </HeadingTag>

@@ -7,7 +7,9 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = ({ children, href, className }) => (
-  <div className={`flex flex-wrap justify-center ${className}`}>
+  <div
+    className={`flex flex-wrap justify-center ${className ? className : ''}`}
+  >
     <a
       href={href}
       className='bg-gold text-white px-4 py-2 rounded-lg font-medium'

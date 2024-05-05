@@ -19,7 +19,7 @@ const Section: FC<SectionProps> = ({
 
   return (
     <section
-      className={`w-full max-w-4xl m-auto px-4 py-12 flex flex-col gap-3 ${textColor} ${bgColor} ${className}`}
+      className={`w-full max-w-6xl m-auto px-4 py-12 flex flex-col gap-3 ${textColor} ${bgColor} ${className ? className : ''}`}
     >
       {children}
     </section>

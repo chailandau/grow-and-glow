@@ -49,7 +49,9 @@ const ContactForm = () => {
           maxLength: 80
         })}
       />
-      <ErrorMessage errors={errors} name='name' />
+      <div className='text-red-600 pl-4'>
+        <ErrorMessage errors={errors} name='name' />
+      </div>
 
       <input
         type='email'
@@ -63,7 +65,9 @@ const ContactForm = () => {
           }
         })}
       />
-      <ErrorMessage errors={errors} name='email' />
+      <div className='text-red-600 pl-4'>
+        <ErrorMessage errors={errors} name='email' />
+      </div>
 
       <textarea
         className={fieldStyles}
@@ -72,7 +76,9 @@ const ContactForm = () => {
           required: 'Message is required'
         })}
       />
-      <ErrorMessage errors={errors} name='message' />
+      <div className='text-red-600 pl-4'>
+        <ErrorMessage errors={errors} name='message' />
+      </div>
 
       <button
         type='submit'

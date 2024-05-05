@@ -24,6 +24,10 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-montserrat)'],
         serif: ['var(--font-playfair)']
+      },
+      transitionProperty: {
+        size: 'width, height',
+        spacing: 'padding, margin'
       }
     }
   },

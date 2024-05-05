@@ -1,23 +1,19 @@
-import Image from 'next/image';
-
 import Button from '@/atoms/Button';
 import Section from '@/atoms/Section';
 import Heading from '@/atoms/Typography';
 import Hero from '@/components/Hero';
+import ResponsiveImage from '@/molecules/ResponsiveImage';
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Section className='text-center'>
-        <div className='relative w-full pb-[50%]'>
-          <Image
-            src='/images/beach.jpg'
-            alt='woman on beach'
-            fill
-            className='object-cover object-top'
-          />
-        </div>
+        <ResponsiveImage
+          src='/images/beach.jpg'
+          alt='woman on beach'
+          position='top'
+        />
         <Heading>Dedicated to empowering women</Heading>
         <p>
           Welcome to Grow and Glow, a sacred space where transformation begins
