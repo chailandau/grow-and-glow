@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 COPY package.json yarn.lock ./
 
-COPY next.config.js ./
+COPY next.config.mjs ./
 
 RUN yarn install --frozen-lockfile
 
